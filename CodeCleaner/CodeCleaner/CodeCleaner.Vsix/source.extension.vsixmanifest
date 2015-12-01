@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="CodeCleaner.Vsix..5e7a438e-8e2e-447f-be6d-70e2651b46d7" Version="1.0" Language="en-US" Publisher="Gabriel"/>
-    <DisplayName>CodeCleaner.Vsix</DisplayName>
+    <Identity Id="CodePropre.Vsix..5e7a438e-8e2e-447f-be6d-70e2651b46d7" Version="1.0" Language="en-US" Publisher="Gabriel"/>
+    <DisplayName>CodePropre.Vsix</DisplayName>
     <Description xml:space="preserve">This is a sample diagnostic extension for the .NET Compiler Platform ("Roslyn").</Description>
   </Metadata>
   <Installation>
@@ -10,12 +10,14 @@
     <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
     <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.VWDExpress" />
     <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.VSWinExpress" />
+    <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Enterprise" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5.2,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="CodeCleaner" Path="|CodeCleaner|"/>
-    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="CodeCleaner" Path="|CodeCleaner|"/>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="CodeCleaner" Path="|CodePropre|"/>
+    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="CodeCleaner" Path="|CodePropre|"/>
   </Assets>
 </PackageManifest>

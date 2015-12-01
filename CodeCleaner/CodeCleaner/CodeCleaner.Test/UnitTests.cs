@@ -4,9 +4,9 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using TestHelper;
-using CodeCleaner;
+using CodePropre;
 
-namespace CodeCleaner.Test
+namespace CodePropre.Test
 {
     [TestClass]
     public class UnitTest : CodeFixVerifier
@@ -41,7 +41,7 @@ namespace CodeCleaner.Test
     }";
             var expected = new DiagnosticResult
             {
-                Id = "CodeCleaner",
+                Id = "CodePropre",
                 Message = String.Format("Type name '{0}' contains lowercase letters", "TypeName"),
                 Severity = DiagnosticSeverity.Warning,
                 Locations =
@@ -71,12 +71,12 @@ namespace CodeCleaner.Test
 
         protected override CodeFixProvider GetCSharpCodeFixProvider()
         {
-            return new CodeCleanerCodeFixProvider();
+            return new CodePropreCodeFixProvider();
         }
 
         protected override DiagnosticAnalyzer GetCSharpDiagnosticAnalyzer()
         {
-            return new CodeCleanerAnalyzer();
+            return new CodePropreAnalyzer();
         }
     }
 }

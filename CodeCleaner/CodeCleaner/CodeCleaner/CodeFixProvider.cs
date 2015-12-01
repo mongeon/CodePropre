@@ -13,16 +13,16 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Rename;
 using Microsoft.CodeAnalysis.Text;
 
-namespace CodeCleaner
+namespace CodePropre
 {
-    [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(CodeCleanerCodeFixProvider)), Shared]
-    public class CodeCleanerCodeFixProvider : CodeFixProvider
+    [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(CodePropreCodeFixProvider)), Shared]
+    public class CodePropreCodeFixProvider : CodeFixProvider
     {
         private const string title = "Make uppercase";
 
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
-            get { return ImmutableArray.Create(CodeCleanerAnalyzer.DiagnosticId); }
+            get { return ImmutableArray.Create(CodePropreAnalyzer.DiagnosticId); }
         }
 
         public sealed override FixAllProvider GetFixAllProvider()

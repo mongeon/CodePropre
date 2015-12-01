@@ -52,9 +52,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodeCleaner\CodeCleaner.csproj">
+    <ProjectReference Include="..\CodeCleaner\CodePropre.csproj">
       <Project>{1EB24C72-D206-4A59-92BA-F95528DB849B}</Project>
-      <Name>CodeCleaner</Name>
+      <Name>CodePropre</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

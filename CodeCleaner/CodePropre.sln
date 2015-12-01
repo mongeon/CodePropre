@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCleaner", "CodeCleaner\CodeCleaner\CodeCleaner.csproj", "{1EB24C72-D206-4A59-92BA-F95528DB849B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePropre", "CodeCleaner\CodeCleaner\CodePropre.csproj", "{1EB24C72-D206-4A59-92BA-F95528DB849B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCleaner.Test", "CodeCleaner\CodeCleaner.Test\CodeCleaner.Test.csproj", "{8EE7F0B7-F040-4005-BCAB-60F0670253CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePropre.Test", "CodeCleaner\CodeCleaner.Test\CodePropre.Test.csproj", "{8EE7F0B7-F040-4005-BCAB-60F0670253CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCleaner.Vsix", "CodeCleaner\CodeCleaner.Vsix\CodeCleaner.Vsix.csproj", "{6AE83C5E-5412-48DA-A551-271786572464}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePropre.Vsix", "CodeCleaner\CodeCleaner.Vsix\CodePropre.Vsix.csproj", "{6AE83C5E-5412-48DA-A551-271786572464}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
